@@ -1,0 +1,26 @@
+BEGIN
+    print(("Hello, ALGOL 68 on EndeavourOS!", newline));
+
+    # Basic arithmetic #
+    INT a = 5, b = 3;
+    print(("a = ", a, ", b = ", b, newline));
+    print(("a + b = ", a + b, newline));
+    print(("a * b = ", a * b, newline));
+
+    # String operations #
+    STRING greeting = "Welcome to programming!";
+    print((greeting, newline));
+
+    # Array example - Method 1: Using FLEX #
+    FLEX[5]INT numbers := (10, 20, 30, 40, 50);
+    FOR i TO 5 DO
+        print(("numbers[", i, "] = ", numbers[i], newline))
+    OD;
+
+    # Conditional statement #
+    IF a > b THEN
+        print(("a is greater than b", newline))
+    ELSE
+        print(("a is not greater than b", newline))
+    FI
+END
